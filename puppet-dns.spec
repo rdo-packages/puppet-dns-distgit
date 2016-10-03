@@ -8,8 +8,8 @@
 
 
 Name:                   puppet-dns
-Version:                XXX
-Release:                XXX
+Version:                3.4.1
+Release:                1%{?alphatag}%{?dist}
 Summary:                Manage the ISC BIND daemon
 License:                Apache-2.0
 
@@ -52,3 +52,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/dns/
 
 
 %changelog
+* Mon Oct  3 2016 Haikel Guemar <hguemar@fedoraproject.org> - 3.4.1-1.162d173.git
+- Newton update 3.4.1 (162d17309e4bbea6bcd0a51c25275ea9e5f98fdf)
+
