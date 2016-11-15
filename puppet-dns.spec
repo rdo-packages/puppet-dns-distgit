@@ -1,15 +1,15 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 
 %define upstream_name puppet-dns
-%global commit 162d17309e4bbea6bcd0a51c25275ea9e5f98fdf
+%global commit 343a804661e81dc5322f20c1e708be971ade914e
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:                   puppet-dns
-Version:                3.4.1
-Release:                1%{?alphatag}%{?dist}
+Version:                4.0.0
+Release:                0.1%{?alphatag}%{?dist}
 Summary:                Manage the ISC BIND daemon
 License:                Apache-2.0
 
@@ -52,6 +52,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/dns/
 
 
 %changelog
+* Tue Nov 15 2016 Alfredo Moralejo <amoralej@redhat.com> 4.0.0-0.1.343a804.git
+- Newton update 4.0.0 (343a804661e81dc5322f20c1e708be971ade914e)
+
 * Mon Oct  3 2016 Haikel Guemar <hguemar@fedoraproject.org> - 3.4.1-1.162d173.git
 - Newton update 3.4.1 (162d17309e4bbea6bcd0a51c25275ea9e5f98fdf)
 
