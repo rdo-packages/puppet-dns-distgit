@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5adbc538_6bff3f02",
+        "filename": "puppet-dns.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2016-11-15T23:44:18Z",
+      "side": 1,
+      "message": "this is pre-versioning in metadata.json\n4.0.0 was not released, so if we want it, it needs to be marked as a pre-release with Release: 0.N...",
+      "revId": "2f97166756ac18a6f6a5f65d09ac87b2eda50a15",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
