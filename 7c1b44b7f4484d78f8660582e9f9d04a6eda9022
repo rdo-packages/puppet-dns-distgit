@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5adbc538_ce25c1ac",
+        "filename": "puppet-dns.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2016-11-16T12:43:00Z",
+      "side": 1,
+      "message": "If we\u0027re not bumping the release to 4.0.0, we should change this I guess.",
+      "range": {
+        "startLine": 56,
+        "startChar": 16,
+        "endLine": 56,
+        "endChar": 21
+      },
+      "revId": "7c1b44b7f4484d78f8660582e9f9d04a6eda9022",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
