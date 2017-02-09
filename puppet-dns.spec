@@ -1,15 +1,14 @@
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
-
+%{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-dns
-%global commit 162d17309e4bbea6bcd0a51c25275ea9e5f98fdf
+%global commit 88fe0f0d71bc39fe080228d946fc256400a08531
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:                   puppet-dns
-Version:                XXX
-Release:                XXX
+Version:        4.0.0
+Release:        1%{?alphatag}%{?dist}
 Summary:                Manage the ISC BIND daemon
 License:                Apache-2.0
 
@@ -52,3 +51,5 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/dns/
 
 
 %changelog
+* Thu Feb 09 2017 Alfredo Moralejo <amoralej@redhat.com> 4.0.0-1.88fe0f0git
+- Ocata update 4.0.0 (88fe0f0d71bc39fe080228d946fc256400a08531)
