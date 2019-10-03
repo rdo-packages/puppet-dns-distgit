@@ -1,15 +1,15 @@
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{!?upstream_version: %global upstream_version %{commit}}
 
 %define upstream_name puppet-dns
-%global commit 162d17309e4bbea6bcd0a51c25275ea9e5f98fdf
+%global commit 2ae1cd70184f64c42d0a3df9a64f90891e8b01aa
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:                   puppet-dns
-Version:                XXX
-Release:                XXX
+Version:                6.2.0
+Release:                1%{?alphatag}%{?dist}
 Summary:                Manage the ISC BIND daemon
 License:                Apache-2.0
 
@@ -52,4 +52,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/dns/
 
 
 %changelog
+* Thu Oct 3 2019 RDO <dev@lists.rdoproject.org> 6.2.0-1.2ae1cd7git
+- Update to post 6.2.0 (2ae1cd70184f64c42d0a3df9a64f90891e8b01aa)
+
 
