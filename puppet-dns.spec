@@ -56,3 +56,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/dns/
 - Update to post 6.2.0 (2ae1cd70184f64c42d0a3df9a64f90891e8b01aa)
 
 
+
