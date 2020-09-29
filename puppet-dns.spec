@@ -1,4 +1,4 @@
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{!?upstream_version: %global upstream_version %{commit}}
 
 %define upstream_name puppet-dns
 %global commit 162d17309e4bbea6bcd0a51c25275ea9e5f98fdf
