@@ -1,0 +1,8 @@
+Code-Review+2: Yatin Karel <ykarel@redhat.com>
+Workflow+1: Yatin Karel <ykarel@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Fri, 26 Mar 2021 04:30:41 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/puppet/puppet-dns-distgit/+/32761
+Project: puppet/puppet-dns-distgit
+Branch: refs/heads/wallaby-rdo
