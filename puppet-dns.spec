@@ -53,3 +53,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/dns/
 
 %changelog
 
+# REMOVEME: error caused by commit https://github.com/theforeman/puppet-dns/commit/8e409eb24041aaba3022c32d4f48448710882054
