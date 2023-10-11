@@ -1,21 +1,15 @@
-%{!?upstream_version: %global upstream_version %{commit}}
-
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %define upstream_name puppet-dns
-%global commit 162d17309e4bbea6bcd0a51c25275ea9e5f98fdf
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-# DO NOT REMOVE ALPHATAG
-%global alphatag .%{shortcommit}git
-
 
 Name:                   puppet-dns
-Version:                XXX
-Release:                XXX
+Version:                10.1.0
+Release:                1%{?alphatag}%{?dist}
 Summary:                Manage the ISC BIND daemon
 License:                Apache-2.0
 
 URL:                    https://github.com/theforeman/puppet-dns
 
-Source0:                https://github.com/theforeman/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
+Source0:                https://github.com/theforeman/%{upstream_name}/archive/v%{upstream_version}.tar.gz#/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildArch:              noarch
 
@@ -52,4 +46,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/dns/
 
 
 %changelog
+* Wed Oct 11 2023 RDO <dev@lists.rdoproject.org> 10.1.0-1
+- Update to 10.1.0
+
 
