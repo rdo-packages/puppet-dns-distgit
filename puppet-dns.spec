@@ -2,8 +2,8 @@
 %define upstream_name puppet-dns
 
 Name:                   puppet-dns
-Version:                XXX
-Release:                XXX
+Version:        10.3.0
+Release:        1%{?dist}
 Summary:                Manage the ISC BIND daemon
 License:                Apache-2.0
 
@@ -46,4 +46,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/dns/
 
 
 %changelog
+* Tue Apr 16 2024 RDO <dev@lists.rdoproject.org> 10.3.0-1
+- Update to 10.3.0
+
 
